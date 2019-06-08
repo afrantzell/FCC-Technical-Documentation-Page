@@ -1,0 +1,113 @@
+<main id = "main-doc">
+  
+<nav id = "navbar">
+  <header id = "navbar-header">
+    Javascript Loops<br><br>
+  </header>
+  <a href = "#Introduction" class = "nav-link">Introduction</a>
+    <a href = "#For_Statements" class = "nav-link">For Statements</a>
+    <a href = "#Do-While_Statements" class = "nav-link">Do-While Statements</a>
+    <a href = "#While_Statements" class = "nav-link">While Statements</a>
+    <a href = "#Break_Statements" class = "nav-link">Break Statements</a>
+    <a href = "#Continue_Statements" class = "nav-link">Continue Statements</a>
+
+  
+  
+  </nav>
+  
+  
+  <section class = "main-section" id="Introduction">
+    <header id = "introduction-header" class = "header">
+      <h3>Introduction</h3>
+    </header>
+      <p>Loops offer a quick and easy way to do something repeatedly. There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times (and it's actually possible that number could be zero). The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.
+      </p>
+  </section>
+  
+   <section class = "main-section" id="For_Statements">  <header id = "for-statement-header" class = "header"> 
+     <h3>For Statements</h3>     
+    </header>
+     <p>A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop. A for statement looks as follows:</p>
+          <code><pre>for ([initialExpression]; [condition]; [incrementExpression])
+  statement</pre></code>
+     <p>When a for loop executes, the following occurs:
+     </p><ul><li>
+The initializing expression initialExpression, if any, is executed. This expression usually initializes one or more loop counters, but the syntax allows an expression of any degree of complexity. This expression can also declare variables.</li>
+       
+<li>The condition expression is evaluated. If the value of condition is true, the loop statements execute. If the value of condition is false, the for loop terminates. If the condition expression is omitted entirely, the condition is assumed to be true.
+     </li><li>
+The statement executes. To execute multiple statements, use a block statement ({ ... }) to group those statements.</li>
+     <li>If present, the update expression incrementExpression is executed.</li>
+  <li>Control returns to step 2.</li>
+      </section>
+   
+     <section class = "main-section" id="Do-While_Statements">
+     <header id = "do-while-header" class = "header"><h3>Do-While Statements</h3>
+        </header>
+     <p>The do...while statement repeats until a specified condition evaluates to false. A do...while statement looks as follows:  
+     </p>
+     <code><pre>
+      do
+  statement
+while (condition);</pre>
+     </code>
+  </section>
+   
+  <section class = "main-section" id="While_Statements">
+    <header id = "while-statements-header" class = "header"><h3>While Statements</h3>
+    </header>
+    <p> A while statement executes its statements as long as a specified condition evaluates to true. </p>
+    <p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+</p>
+    <p>
+The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
+    </p><p>
+To execute multiple statements, use a block statement ({ ... }) to group those statements.
+      
+    </p><p>
+      The following while loop iterates as long as n is less than three:
+    </p>
+    <code><pre>
+var n = 0;
+var x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+  </pre></code>
+  </section>
+  
+  <section class = "main-section" id="Break_Statements">
+    <header id = "break-header" class = "header"><h3>Break Statements</h3>
+    </header>
+    <p>Use the break statement to terminate a loop, switch, or in conjunction with a labeled statement.</p>
+    <p>The first form of the syntax terminates the innermost enclosing loop or switch; the second form of the syntax terminates the specified enclosing labeled statement.</p>
+    <p>The following example iterates through the elements in an array until it finds the index of an element whose value is theValue:</p>
+
+<code><pre>
+  for (var i = 0; i < a.length; i++) {
+  if (a[i] == theValue) {
+    break;
+  }
+               }</pre></code>
+  </section>
+  
+  <section class = "main-section" id="Continue_Statements">
+    <header id = "continue-header" class = "header"><h3>Continue Statements</h3>
+    </header>
+    <p>The continue statement can be used to restart a while, do-while, for, or label statement.</p>
+    <p>The following example shows a while loop with a continue statement that executes when the value of i is three. Thus, n takes on the values one, three, seven, and twelve.</p>
+    <code><pre>var i = 0;
+var n = 0;
+while (i < 5) {
+  i++;
+  if (i == 3) {
+    continue;
+  }
+  n += i;
+}</pre></code>
+    
+  </section>
+   
+</main>
+

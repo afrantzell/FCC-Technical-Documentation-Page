@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Roboto+Mono);
+
+main{font-family: "Slabo 27px";}
+
+#navbar{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 10;
+  justify-content: space-around;
+}
+
+pre{
+  font-family: "Roboto Mono";
+  font-size: 0.8em;
+background-color: #f8edf7;
+  margin-left: 100px;
+  margin-right: 200px;
+  padding: 20px;
+ }
+
+  @media (max-width: 970px){
+  pre{
+    font-size: 0.5em;
+    }
+  }
+
+.nav-link{text-decoration: none;}
+
+#navbar-header{
+  font-weight: bold;
+}
+
+section{width: 70%;
+margin-left: 200px;
+margin-right: 200px;}
+
+a{color: #000;}
